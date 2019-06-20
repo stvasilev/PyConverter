@@ -30,11 +30,10 @@ def main():
     loop = True
     while(loop):
         number = input("\nEnter a decimal or binary number: ")
-        print("\n")
 
         inputIncorrect = True
         while(inputIncorrect):
-            numType = input("Specify type - decimal or binary (d/b): ")
+            numType = input("\nSpecify type - decimal or binary (d/b): ")
             if(numType == "d" or numType == "b"):
                 inputIncorrect = False
                 break
@@ -43,11 +42,9 @@ def main():
 
         inputIncorrect = True
         while(inputIncorrect):
-            print("\n")
-            command = input("Convert the number to binary, octal, decimal or hexadecimal? (b/o/d/h) : ")
+            command = input("\nConvert the number to binary, octal, decimal or hexadecimal? (b/o/d/h) : ")
             if(command != "b" and command != "o" and command != "d" and command != "h"):
-                print("\n")
-                print("Invalid input! ")
+                print("\nInvalid input! ")
             else:
                 inputIncorrect = False
                 break
